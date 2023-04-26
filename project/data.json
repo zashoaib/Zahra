@@ -1,0 +1,23 @@
+[
+    {
+      "price":"750ml | $42",
+      "text": "HICKINBOTHAM",
+    "title": "Trueman",
+    "description": "McLaren Vale | Cabernet Sauvignon | 2018",
+   "image": "img.webp"
+     },
+     {
+      "price":"750ml | $42",
+      "text": "HICKINBOTHAM",
+    "title": "Trueman",
+     "description": "McLaren Vale | Cabernet Sauvignon | 2018",
+     "image": "img.webp"
+     },
+     {
+      "price":"750ml | $42",
+      "text": "HICKINBOTHAM",
+     "title": "Trueman",
+     "description": "McLaren Vale | Cabernet Sauvignon | 2018",
+     "image": "img.webp"
+     }
+    ]

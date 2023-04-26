@@ -1,0 +1,162 @@
+#productCard{
+  
+padding: 10px 10px 24px;
+gap: 16px;
+
+
+height: 584px;
+
+
+background: #FFFFFF;
+
+
+border: 1px solid #827461;
+
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+}
+#cardimg{
+    
+width: 408px;
+height: 353px;
+left: 0px;
+
+}
+.add{
+    
+margin-left: 10px;
+font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+
+
+text-align: center;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+
+
+color: #501B27;
+
+background: #FFFFFF;
+
+
+border: 1px solid #827461;
+box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05)
+
+}
+#trueman{
+    
+
+font-family: 'DM Serif Display';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+color: #3D3932;
+
+}
+#hickinbotham{
+
+font-family: 'Proxima Nova';
+font-size: 12px;
+
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: #827461;
+}
+#mcLaren{
+font-family: 'Proxima Nova';
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+
+color: #827461;
+
+}
+#quantity{
+
+    font-family: 'Proxima Nova';
+    font-size: 14px;
+    text-align: center;
+
+    color: #501B27;
+}
+#plus{
+
+    /* position: absolute;  */
+     width: 7.56px;
+    height: 21.76px;
+    left: 62px;
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #501B27;
+}
+#minus{
+
+    /* margin-left: 50px; */
+
+    font-family: 'Proxima Nova';
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+    color: #827461;
+}
+#price{
+margin-left: 102px;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+
+text-align: right;
+
+color: #827461;
+
+
+
+}
+#points{
+    width: 49px;
+height: 14px;
+left: 0px;
+top: 30px;
+font-family: 'Proxima Nova';
+font-size: 12px;
+text-align: center;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+
+color: #965930;
+}
+#nine{
+    width: 36px;
+height: 30px;
+left: 7px;
+top: 0px;
+
+font-family: 'DM Serif Display';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 33px;
+text-align: center;
+color: #965930;
+}
+#hr{
+    border: 0.5px solid #827461;
+}
+#line{
+   margin-left: 30px;
+width: 68px;
+height: 0px;
+border: 0.5px solid #827461;
+}
+#container{
+  
+    text-align: center;
+    border-bottom: #827461;
+
+}

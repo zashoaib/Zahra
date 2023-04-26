@@ -1,0 +1,13 @@
+#productCard{
+    padding: 10px 10px 24px;
+    gap: 16px;
+   
+   
+    height: 610px;
+     
+     
+
+    background: #FFFFFF;
+    border: 1px solid #827461;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.05);
+    }

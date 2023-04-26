@@ -5,58 +5,102 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-
-        $(function () {
-            $.ajax({
-                url: "https://jsonplaceholder.typicode.com/posts",
-                success: function (result) {
-                    var htmlContent = '';
-                    $.each(result, function (index, item) {
-                        var userId = item.userId;
-                        var typeId = item.id;
-                        var titleId = item.title;
-                        var bodyId = item.body;
-                        // Below is String Interpolation used in JS, where you can replace variables inside the string
-                        htmlContent += `<div class="container">
-    <div class="card bg-warning">
-        <!-- put item.userId & item.id below this -->
-        <div class="card-header">
-          <span>${userId}<span>
-          <span>${typeId}<span>
-        </div>
-        <div class="card-body">
-            <!-- put item.title below this -->
-            <h5 class="card-title">${titleId}</h5>
-            <!-- put item.body below this -->
-            <p class="card-text">${bodyId}</p>
-        </div>
-    </div>
-</div>`;
-                    });
-
-                    // htmlContent below contains your whole html
-                    console.log('success', htmlContent);
-                }
-            });
-        });
-
-    </script>
 </head>
 
 <body>
-
     <div class="container">
-        <div class="card bg-warning">
-            <div class="card-header"></div>
+        <div class="card-group">
+            <div class="card">
+                <img src="Hickinbotham1.webp" class="card-img-top" alt="Hickinbotham">
+                <div class="card-img-overlay">
+                    <div class="d-flex justify-content-between">
 
-            <div class="card-body">
-                <h5 class="card-title"></h5>
-                <p class="card-text"></p>
+                        <p style="color:#B78D33" class="font-weight-bold">93 <br /> POI<br />NTS</p>
+                        <i class="fa fa-heart" style="font-size:15px;color: brown;"></i>
+                    </div>
+                </div>
+
+                <div class="card-body">
+                    <h5 class="card-title">MICKINBOTHAM <span class="textend"> <small> 750 ml | $42</small></span></h5>
+                    <h3 class="trueman">Trueman</h3>
+                    <p class="card-text">McLaren Vale | Cabernet Sauvignon | 2018</p>
+                </div>
+                <div class="card-footer" id="f3">
+                    <p> <span><button id="minus()" onclick="minus">-</button> <span id="quantity">1</span> <button
+                                id="+" onclick="plus">+</button><button class="add">Add to Cart</button>
+
+
+                    </p>
+
+                </div>
+            </div>
+            <div class="card">
+                <div class="container">
+                    <img src="Hickinbotham1.webp" class="card-img-top" alt="Hickinbotham">
+                    <div class="card-img-overlay">
+                        <div class="d-flex justify-content-between">
+
+                            <p style="color:#B78D33" class="font-weight-bold">93 <br /> POI<br />NTS</p>
+                            <i class="fa fa-heart" style="font-size:15px;color: brown;"></i>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">MICKINBOTHAM <span class="textend"> <small> 750 ml |
+                                $42</small></span></h5>
+                    <h3 class="trueman">Trueman</h3>
+                    <p class="card-text">McLaren Vale | Cabernet Sauvignon | 2018</p>
+                </div>
+                <div class="card-footer" id="f2">
+
+                    <p> <span><button id="minus()" onclick="minus">-</button> <span id="quantity">1</span> <button
+                                id="+" onclick="plus">+</button><button class="add">Add to Cart</button></p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="Hickinbotham1.webp" class="card-img-top" alt="Hickinbotham">
+                <div class="card-img-overlay">
+                    <div class="d-flex justify-content-between">
+
+                        <p style="color:#B78D33" class="font-weight-bold">93 <br /> POI<br />NTS</p>
+                        <i class="fa fa-heart" style="font-size:15px;color: brown;"></i>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">MICKINBOTHAM <span class="textend"> <small> 750 ml | $42</small></span></h5>
+                    <h3 class="trueman">Trueman</h3>
+                    <small>
+                        <p class="card-text">McLaren Vale | Cabernet Sauvignon | 2018</p>
+                    </small>
+                </div>
+                <div class="card-footer" id="f2">
+
+                    <p> <span><button id="minus()" onclick="minus">-</button> <span id="quantity">1</span> <button
+                                id="+" onclick="plus">+</button>
+                        </span><button class="add">Add to Cart</button></p>
+                </div>
             </div>
         </div>
     </div>
 
+    <script>
+        let minus = () => {
+            var x;
+            x += 1;
+            document.getElementById("quantity").innerHTML = x;
+
+        }
+        let plus = () => {
+            var x;
+            x += 1;
+            document.getElementById("quantity").innerHTML = x;
+
+        }
+    </script>
 </body>
+
+
+
 
 </html>

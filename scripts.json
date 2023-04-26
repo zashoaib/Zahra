@@ -1,0 +1,56 @@
+[{
+    "scripts": {
+        "web3py": [
+            {
+                "thumbnail": "images/thumbnails/sendetherweb3py.png",
+                "scriptName": "send Native",
+                "description": "send native with web3py",
+                "link": "https://jsonformatter.org/img/tom-cruise.jpg"
+            },
+            {
+                "thumbnail": "images/thumbnails/sendtokenweb3py.png",
+                "scriptName": "send token",
+                "description": "send erc20 token with web3py",
+                "link": "https://jsonformatter.org/img/tom-cruise.jpg"
+            },
+            {
+                "thumbnail": "images/thumbnails/swapnativeweb3py.png",
+                "scriptName": "swap native token dex",
+                "description": "swap eth for erc20 token",
+                "link": "https://jsonformatter.org/img/tom-cruise.jpg"
+            },
+            {
+                "thumbnail": "images/thumbnails/swaptokenweb3py.png",
+                "scriptName": "swap erc20 token on dex",
+                "description": "swap erc20 token with erc20 token",
+                "link": "https://jsonformatter.org/img/tom-cruise.jpg"
+            }
+        ],
+        "web3js": [
+            {
+                "thumbnail": "images/thumbnails/swaptokenethers.png",
+                "scriptName": "swap token on dex",
+                "description": "swap erc20 token with token on a dex",
+                "link": "https://jsonformatter.org/img/tom-cruise.jpg"
+            },
+            {
+                "thumbnail": "images/thumbnails/swapnativeethers.png",
+                "scriptName": "swap native",
+                "description": "swap native for token on dex",
+                "link": "https://jsonformatter.org/img/tom-cruise.jpg"
+            },
+            {
+                "thumbnail": "images/thumbnails/sendtokenethers.png",
+                "scriptName": "send ERC20 token",
+                "description": "send erc20 token with ethers",
+                "link": "https://jsonformatter.org/img/tom-cruise.jpg"
+            },
+            {
+                "thumbnail": "images/thumbnails/sendnativeethers.png",
+                "scriptName": "send native",
+                "description": "send Native ETH with ethers",
+                "link": "https://jsonformatter.org/img/tom-cruise.jpg"
+            }
+        ]
+    }
+}]

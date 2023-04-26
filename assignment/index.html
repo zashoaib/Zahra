@@ -4,52 +4,55 @@
 <head>
     <meta charset="UTF-8">
     <title>JavaScript - Display JSON data as Table</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <h1>Display JSON Data as Table.</h1>
-    <button onclick="showTable()">Show List</button>
-    <hr>
-
     <script>
-        function showTable() {
-            fetch("./index.json")
-                .then(response => response.json())
-                .then(data => createTable(data));
-        }
+        // function showTable() {
+        //     fetch("./index.json")
+        //         .then(response => response.json())
+        //         .then(data => createCard(data));
+        // }
 
-        function createTable(data) {
-            var table = "<table border=1>";
-            // add a row for name and marks
-            table += `<tr>
-                  <th>Name</th>
-                  <th colspan="4">Marks</th>
-                </tr>`;
-            // now add another row to show subject
-            table += `<tr>
-                  <th></th>
-                  <th>Math</th>
-                  <th>English</th>
-                  <th>Chemistry</th>
-                  <th>Physics</th>
-                </tr>`;
-            // now loop through students
-            // show their name and marks
-            var tr = "";
-            for (let i = 0; i < data.result.length; i++) {
-                tr += "<tr>";
-                tr += `<td>${data.result[i].name}</td>`;
-                for (var key in data.result[i].marks) {
-                    tr += `<td>${data.result[i].marks[key]}</td>`;
+        (function () {
+            //hide first div or remove after append using `$(".card:first").remove()`
+            (".card:first").show()
+            ajax({
+                url: "https://jsonplaceholder.typicode.com/posts",
+                success: function (result) {
+                    each(result, function (index, item) {
+                        var cards = $(".card:first").clone() //clone first divs
+                        var userId = item.userId;
+                        var typeId = item.id;
+                        var titleId = item.title;
+                        var bodyId = item.body;
+                        //add values inside divs
+                        (cards).find(".card-header").html("user id: " + userId + " - " + "id: " + typeId);
+                        (cards).find(".card-title").html(titleId);
+                        (cards).find(".card-text").html(bodyId);
+                        (cards).show() //show cards
+                            (cards).appendTo($(".container")) //append to container
+                    });
                 }
-                tr += "</tr>"
-            }
-            table += tr + "</table>";
-
-            // append table to body
-            document.body.innerHTML += table;
-        }
+            });
+        });
     </script>
+    <div class="container">
+        <div class="card bg-warning">
+
+            <div class="card-header"></div>
+
+            <div class="card-body">
+
+                <h5 class="card-title"></h5>
+
+                <p class="card-text"></p>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
